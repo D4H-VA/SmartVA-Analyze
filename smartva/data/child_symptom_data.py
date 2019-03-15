@@ -310,7 +310,7 @@ CENSORED_MAP = {
         's999914',      # word_dehydr
         's137',         # Did [name] have a bulging fontanelle during the illness that led to death?
     ],
-    13: [   # Other Cardiovascular Diseases
+    13: [   # Childhood Cardiovascular Diseases
         's137',         # Did [name] have a bulging fontanelle during the illness that led to death?
         's129',  # During the illness that led to death, did he/she have indrawing of the chest?
         's131',  # Breathing: Grunting
@@ -322,6 +322,7 @@ CENSORED_MAP = {
         's135991',  # unconsciousness started >24hrs before death
         's189',  # Mother had positive HIV test
         's190',  # Has the deceased's (biological) mother ever been told she had AIDS by a health worker?
+        's999923', ## Remove word_heart
     ],
     15: [   # Other Digestive Diseases
         's999933',      # word_pneumonia
