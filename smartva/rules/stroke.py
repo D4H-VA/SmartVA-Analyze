@@ -26,6 +26,6 @@ def logic_rule(row):
 
     pneumonia = value_of(Adult.FREE_TEXT_PNEUMONIA) == YES
 
-    return ((stroke and paralysis_one_side) or
-            (diabetes and any_paralysis_or_stroke) or
-            (pneumonia and any_paralysis_or_stroke))
+    return ((stroke and paralysis_one_side) #or
+            #(diabetes and any_paralysis_or_stroke) or
+            #(pneumonia and any_paralysis_or_stroke))
