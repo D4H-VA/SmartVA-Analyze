@@ -78,6 +78,12 @@ class Adult(object):
     FREE_TEXT_HEART_PROBLEM = 'a_7_5'
     FREE_TEXT_PNEUMONIA = 'a_7_9'
     FREE_TEXT_SUICIDE = 'a_7_11'
+    AIDS = 'a1_01_14'
+    TUBERCULOSIS = 'a1_01_13'
+    CANCER = 'a1_01_3'
+    LUMP_IN_NECK = 'a2_29'
+    ULCER_IN_BREAST = 'a3_02'
+    LOST_CONSCIOUSNESS = 'a2_74'
 
 
 class Child(object):
