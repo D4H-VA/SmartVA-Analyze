@@ -5,7 +5,7 @@ from smartva.loggers import status_logger, warning_logger
 from smartva.utils import status_notifier
 from smartva.utils.conversion_utils import additional_headers_and_values, \
     safe_int, safe_float
-
+from smartva.rules.stroke import logic_rule
 
 INPUT_FILENAME_TEMPLATE = '{:s}-logic-rules.csv'
 OUTPUT_FILENAME_TEMPLATE = '{:s}-symptom.csv'
@@ -38,6 +38,7 @@ class SymptomPrep(DataPrep):
 
         self.data_module = data_module
         self.AGE_GROUP = data_module.AGE_GROUP
+
 
     def run(self):
         super(SymptomPrep, self).run()
@@ -180,6 +181,8 @@ class SymptomPrep(DataPrep):
                 continue
             row[read_header] = int(value == 1)
 
+
+
     def censor_causes(self, row, cause_conditions):
         """Mark causes which should be ranked as lowest based on symptom endorsement
 
@@ -191,7 +194,14 @@ class SymptomPrep(DataPrep):
         for cause, symptoms in cause_conditions.items():
             if any([safe_int(row.get(symp, 0)) for symp in symptoms]):
                 restricted.add(cause)
+
+        if logic_rule(row) == True:
+            restricted.add(44)  #cause 44 is stroke
+
         row['restricted'] = ' '.join(map(str, sorted(restricted)))
+
+
+
 
     def require_symptoms(self, row, cause_conditions):
         """Mark causes which should be ranked as lowested based on the lack

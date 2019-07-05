@@ -23,7 +23,6 @@ from smartva.rules import (
     road_traffic_adult,
     road_traffic_child,
     stillbirth,
-    stroke,
     suicide,
 )
 
@@ -95,7 +94,6 @@ ADULT_RULES = [
     other_injury_adult,
     homicide_adult,
     suicide,
-    stroke,
 ]
 
 CHILD_RULES = [
