@@ -134,6 +134,49 @@ SPURIOUS_ASSOCIATIONS = {
     ],
     17: [  # Pneumonia
         's999931',  # word_malnutrit
+        's999923',  # word_dehydr
+        's189',     # Was the HIV test ever positive?
+        's190',     # Has the deceased's (biological) mother ever been told she had AIDS by a health worker?
+        's999949',  # word_yellow
+        's151',     # During the illness that led to death, did [name] have swelling in the armpits?
+        's139991',  # decedent had face rash
+        's999927',  # word_kidney
+        's999943',  # word_skin
+        's164',     # Decedent did not suffer accident
+        's156',     # Decedent suffered fall
+        's999916',  # word_diarrhea
+        's99991',   # word_abdomen
+        's137',     # Did [name] have a bulging fontanelle during the illness that led to death?
+        's999926',  # word_jaundic
+        's115',     # During the illness that led to death, did [name] have more frequent loose or liquid stools than usual?
+        's116991',  # more than 1 loose stools
+        's117',     # How many days before death did the frequent loose or liquid stools start? [days]
+        's118',     # Did the frequent loose or liquid stools continue until death?
+        's120',     # Was there visible blood in the loose or liquid stools?
+        's133',     # Did [name] experience any generalized convulsions or fits during the illness that led to death?
+        's134',     # Was [name] unconscious during the illness that led to death?
+        's135991',  # unconsciousness started >24hrs before death
+        's136',     # Did [name] have a stiff neck during the illness that led to death?
+        's138',     # During the month before he/she died, did [name] have a skin rash?
+        's142',     # How many days did the rash last? [days]
+        's145',     # During the illness that led to death, did [name] have swollen legs or feet?
+        's146',     # How long did the swelling last? [days]
+        's149',     # Did [name] have a protruding belly?
+        's154',     # During the illness that led to death, did he/she have areas of the skin that turned black?
+        's155',     # Decedent suffered road traffic injury
+        's157',     # Decedent suffered drowning
+        's158',     # Decedent suffered poisoning
+        's159',     # Decedent suffered bite/sting
+        's160',     # Decedent suffered burn/fire
+        's161',     # Decedent victim of violence
+        's162',     # Decedent suffered other injury
+        's165',     # Was the injury or accident intentionally inflicted by someone else?
+        's16991',   # decedent was born dead
+        's17',      # Did the baby ever cry?
+        's18',      # Did the baby ever move?
+        's19',      # Did the baby ever breathe?
+        's999935',  # word_pox
+        's99999',   # word_cancer
     ],
     18: [  # Poisonings
         's158',
