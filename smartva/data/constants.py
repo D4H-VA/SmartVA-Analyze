@@ -113,6 +113,7 @@ class Child(object):
     FREE_TEXT_FEVER = 'c_6_6'
     FREE_TEXT_HEART = 'c_6_7'
     FREE_TEXT_PNEUMONIA = 'c_6_9'
+    GRUNTING = 'c4_23'
 
 
 class Neonate(object):

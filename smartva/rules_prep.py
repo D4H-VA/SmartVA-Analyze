@@ -20,6 +20,7 @@ from smartva.rules import (
     other_injury_child,
     poisoning_adult,
     poisoning_child,
+    pneumonia_child,
     road_traffic_adult,
     road_traffic_child,
     stillbirth,
@@ -108,6 +109,7 @@ CHILD_RULES = [
     other_injury_child,
     homicide_child,
     aids_child,
+    pneumonia_child,
 ]
 NEONATE_RULES = [
     stillbirth,
