@@ -17,7 +17,7 @@ def logic_rule(row):
         value_of(Child.GRUNTING) == YES,
     ])
 
-    other = any ([
+    other != any ([
         value_of(Child.FREE_TEXT_HEART) == YES,
         value_of(Child.SWELLING_IN_PITS) == YES,
         value_of(Child.BULGING_FONTANELLE) == YES,
@@ -31,5 +31,5 @@ def logic_rule(row):
         value_of(Child.FREE_TEXT_MALARIA) == YES,
     ])
 
-    return pneumonia_cough and breathing_difficulties not other
+    return pneumonia_cough and breathing_difficulties and other
     
