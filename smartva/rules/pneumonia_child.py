@@ -17,5 +17,19 @@ def logic_rule(row):
         value_of(Child.GRUNTING) == YES,
     ])
 
-    return pneumonia_cough and breathing_difficulties
+    other = any ([
+        value_of(Child.FREE_TEXT_HEART) == YES,
+        value_of(Child.SWELLING_IN_PITS) == YES,
+        value_of(Child.BULGING_FONTANELLE) == YES,
+        value_of(Child.GENERALIZED_CONVULSIONS) == YES,
+        value_of(Child.FREE_TEXT_DIARRHEA) == YES,
+        value_of(Child.LOOSE_STOOL) == YES,
+        value_of(Child.FREE_TEXT_STOOL) == YES,
+        value_of(Chid.FREE_TEXT_NECK) == YES,
+        value_of(Child.UNCONSCIOUS) == YES,
+        value_of(Child.FREE_TEXT_KIDNEY) == YES,
+        value_of(Child.FREE_TEXT_MALARIA) == YES,
+    ])
+
+    return pneumonia_cough and breathing_difficulties not other
     

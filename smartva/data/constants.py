@@ -114,6 +114,14 @@ class Child(object):
     FREE_TEXT_HEART = 'c_6_7'
     FREE_TEXT_PNEUMONIA = 'c_6_9'
     GRUNTING = 'c4_23'
+    SWELLING_IN_PITS = 'c4_42'
+    BULGING_FONTANELLE = 'c4_29'
+    GENERALIZED_CONVULSIONS = 'c4_25'
+    FREE_TEXT_STOOL = 'c7_01'
+    FREE_TEXT_NECK = 'c7_02'
+    UNCONSCIOUS = 'c4_26'
+    FREE_TEXT_KIDNEY = 'c7_03'
+    FREE_TEXT_KIDNEY = 'c7_04'
 
 
 class Neonate(object):
